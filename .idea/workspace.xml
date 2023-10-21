@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5e9d35b-92b4-468c-af5c-c3b2281c6605" name="Default Changelist" comment="" />
+    <list default="true" id="b5e9d35b-92b4-468c-af5c-c3b2281c6605" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pred.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pred.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wine_model.model" beforeDir="false" afterPath="$PROJECT_DIR$/wine_model.model" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="225">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -84,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="14" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -94,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/unit_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -123,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="35" />
     <option name="y" value="475" />
     <option name="width" value="335" />
@@ -163,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in unit_test.py">
+  <component name="RunManager" selected="Python.test">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="laba3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,9 +246,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python tests.Unittests in unit_test.py" />
         <item itemvalue="Python tests.Unittests for unit_test.Test" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
@@ -278,9 +282,12 @@
     <history-entry file="Unittests_in_unit_test_py - 2023.10.21 at 19h 54m 24s.xml">
       <configuration name="Unittests in unit_test.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_unit_test_py - 2023.10.21 at 20h 21m 59s.xml">
+      <configuration name="Unittests in unit_test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -313,16 +320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/sklearn/metrics/_classification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -333,17 +330,27 @@
     <entry file="file://$PROJECT_DIR$/unit_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="150">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
