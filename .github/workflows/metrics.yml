@@ -11,7 +11,7 @@ jobs:
     steps:
       - run: echo "build..."
   
-  test:
+  metric:
     needs: build
     runs-on: windows-latest
 
