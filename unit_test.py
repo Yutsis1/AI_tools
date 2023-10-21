@@ -1,7 +1,7 @@
 import unittest
 from train import x_train
-from test import x_test, y_pred
-from test import f1
+from model_calc import x_test, y_pred
+from model_calc import f1
 
 
 class Test(unittest.TestCase):
