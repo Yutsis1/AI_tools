@@ -31,6 +31,17 @@ jobs:
 
     - name: Run tests
       run: python -m unittest discover -p "*test.py"
+
+    - name: Run metrics
+      run: python "metrics.py"
+
+    - name: disp report
+      env:
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+      run:
+        cat metrics.txt >> report.md
+        echo "![](./plot.png)" >> report.md
+        cml comment create report.md
       
   deploy:
     needs: test
