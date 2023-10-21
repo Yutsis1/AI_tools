@@ -27,7 +27,7 @@ print("F1 score:", f1)
 print("recall score:", recall)
 # Запись метрики F1 в файл
 with open('metrics.txt', 'w') as file:
-    file.write('f1 метрика = ' + str(f1) + '\nrecall метрика = ' + str(recall))
+    file.write('f1 metric = ' + str(f1) + '\nrecall metric = ' + str(recall))
 
 # Получаем значения точности на обучающей и тестовой выборках на каждой итерации
 test_accuracies = []
