@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import joblib
 from sklearn.metrics import f1_score
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
 
 # Загрузка данных из файла CSV в DataFrame
 test_data = pd.read_csv('test_data.csv')

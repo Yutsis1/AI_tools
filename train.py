@@ -8,6 +8,9 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import numpy as np
 import joblib
+import sys
+
+sys.stdout.reconfigure(encoding='utf-8')
 
 # Загрузка датасета
 wine = load_wine()
