@@ -7,6 +7,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import numpy as np
+import joblib
 
 # Загрузка датасета
 wine = load_wine()
@@ -19,8 +20,8 @@ print("Количество классов: ", len(wine.target_names))
 print("Список имен классов: ", wine.target_names)
 
 # Вывод первых 5 образцов
-print("\nПервые 5 образцов:")
-for i in range(5):
+print("\nПервые 3 образца:")
+for i in range(3):
     print("Образец ", i + 1, ":")
     print("Признаки: ", wine.data[i])
     print("Класс: ", wine.target_names[wine.target[i]])
@@ -37,13 +38,12 @@ test_data.to_csv('test_data.csv')
 # Создание и обучение модели RandomForestClassifier
 model = RandomForestClassifier()
 model.fit(x_train, y_train)
+# Сохранение модели
+joblib.dump(model, 'wine_model.model')
+print("Модель сохранена в файл 'wine_model.model'")
 
 # Прогнозирование классов для тестовых данных
 y_pred = model.predict(x_test)
-
-# Оценка точности модели
-accuracy = accuracy_score(y_test, y_pred)
-print("Точность модели: {:.2f}%".format(accuracy * 100))
 
 # Оценка точности модели
 accuracy = accuracy_score(y_test, y_pred)
@@ -56,20 +56,3 @@ plt.title('Матрица пересечений')
 plt.xlabel('Предсказанные метки')
 plt.ylabel('Истинные метки')
 plt.show()
-
-# Отрисовка диаграммы результатов
-# labels = wine.feature_names
-# x = np.arange(len(labels))
-# width = 0.35
-#
-# fig, ax = plt.subplots()
-# rects1 = ax.bar(x, model.feature_importances_, width)
-#
-# ax.set_ylabel('Важность признаков')
-# ax.set_title('Важность признаков в модели RandomForestClassifier')
-# ax.set_xticks(x)
-# ax.set_xticklabels(labels)
-# ax.legend()
-#
-# fig.tight_layout()
-# plt.show()
