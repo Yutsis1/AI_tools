@@ -17,7 +17,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - uses: iterative/setup-cml@v2
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -34,13 +33,15 @@ jobs:
 
     - name: Run metrics
       run: python "metrics.py"
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: generated-image
+        path: plot.png
 
-    - name: disp report
-      env:
-        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
-      run:
-        cat metrics.txt >> report.md
-        cml comment create report.md
+    - name: Create report
+      run: |
+        echo "<img src='./image.png'>" > report.md
       
   deploy:
     needs: test
