@@ -1,0 +1,47 @@
+name: get metrics
+
+on:
+  push:
+    branches:
+      - metrics
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - run: echo "build..."
+  
+  test:
+    needs: build
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run metrics
+      run: python "metrics.py"
+
+    - name: disp report
+      env:
+        REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
+      run:
+        cat metrics.txt >> report.md
+        echo "![](./plot.png)" >> report.md
+        cml comment create report.md
+      
+  deploy:
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - run: echo "deploy..."
