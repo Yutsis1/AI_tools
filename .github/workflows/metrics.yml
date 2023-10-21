@@ -3,7 +3,7 @@ name: get metrics
 on:
   push:
     branches:
-      - metrics
+      - main
 
 jobs:
   build:
