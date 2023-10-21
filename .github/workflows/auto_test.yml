@@ -41,7 +41,7 @@ jobs:
 
     - name: Create report
       run: |
-        echo "<img src='./image.png'>" > report.md
+        echo "<img src='./plot.png'>" > report.md
       
   deploy:
     needs: test
