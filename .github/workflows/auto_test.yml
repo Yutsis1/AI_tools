@@ -40,7 +40,7 @@ jobs:
         REPO_TOKEN: ${{ secrets.REPO_TOKEN }}
       run:
         cat metrics.txt >> report.md
-        echo "![](./plot.png)" >> report.md
+        echo "![](./plot.png)"
         cml comment create report.md
       
   deploy:
