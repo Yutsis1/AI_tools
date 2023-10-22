@@ -38,6 +38,10 @@ jobs:
       with:
         name: generated-image
         path: plot.png
+    - uses: mshick/add-pr-comment@v2
+      with:
+        message: |
+          KEKE
 
     - name: Create report
       run: |
